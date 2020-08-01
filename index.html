@@ -325,7 +325,7 @@
     </script>
 </head>
 
-<body class="cute-body" onselectstart="return false" oncontextmenu="return false">
+<body class="cute-body" onselectstart="return false" oncontextmenu="return false" autocomplete="off">
 <div class="cute-page">
     <div class="cute-form">
         <div class="cute-instructions">
@@ -341,8 +341,8 @@
 
         <hr class="cute-hr">
 
-        <form id="cute-form" action="#" method="post">
-            <div class="wrap-input100 validate-input" data-validate = "Password is required">
+        <form id="cute-form" action="#" method="post" autocomplete="off">
+            <div class="wrap-input100 validate-input" data-validate = "Password is required" autocomplete="off">
                         <input class="input100" id="cute-password" type="password" name="password" placeholder="Passphrase" readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" >
                         <span class="focus-input100"></span>
                         </span>
