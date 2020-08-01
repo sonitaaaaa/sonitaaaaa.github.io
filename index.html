@@ -47,62 +47,26 @@
             font-size: 14px;
         }
 
-        .cute-form nav ul li {
-            --c: goldenrod;
-            color: var(--c);
-            font-size: 16px;
-            border: 0.3em solid var(--c);
-            border-radius: 0.5em;
-            width: 12em;
-            height: 3em;
+        .cute-form .cute-decrypt-button {
             text-transform: uppercase;
-            font-weight: bold;
-            font-family: sans-serif;
-            letter-spacing: 0.1em;
-            text-align: center;
-            line-height: 3em;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            transition: 0.5s;
-            margin: -0.15vw;
+            outline: 0;
+            background: goldenrod;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            cursor: pointer;
         }
 
-        .cute-form nav ul li span {
-            position: absolute;
-            width: 25%;
-            height: 100%;
-            background-color: var(--c);
-            transform: translateY(150%);
-            border-radius: 50%;
-            left: calc((var(--n) - 1) * 25%);
-            transition: 0.5s;
-            transition-delay: calc((var(--n) - 1) * 0.1s);
-            z-index: -1;
+        .cute-form .cute-decrypt-button:hover, .cute-form .cute-decrypt-button:active, .cute-form .cute-decrypt-button:focus {
+            background-color: darkgoldenrod;
+            outline: none;
+            -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+            -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .75);
+            box-shadow: 0 0 1px rgba(0, 0, 0, .75);
         }
 
-        .cute-form nav ul li:hover {
-            color: white;
-        }
-
-        .cute-form nav ul li:hover span {
-            transform: translateY(0) scale(2);
-        }
-
-        .cute-form nav ul li span:nth-child(1) {
-            --n: 1;
-        }
-        .cute-form nav ul li span:nth-child(2) {
-            --n: 2;
-        }
-
-        .cute-form nav ul li span:nth-child(3) {
-            --n: 3;
-        }
-
-        .cute-form nav ul li span:nth-child(4) {
-            --n: 4;
-        }
         .cute-html {
             height: 100%;
         }
@@ -280,13 +244,7 @@
                    name="password"
                    placeholder="Passphrase"
                    autofocus/>
-            <nav>
-                <ul>
-                    <li type="submit" class="cute-decrypt-button" value="DECRYPT">DECRYPT
-                        <span></span><span></span><span></span><span></span>
-                    </li>
-                </ul>
-            </nav>
+            <input type="submit" class="cute-decrypt-button" value="DECRYPT"/>
         </form>
     </div>
 </div>
