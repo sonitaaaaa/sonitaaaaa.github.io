@@ -343,7 +343,7 @@
 
         <form id="cute-form" action="#" method="post">
             <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                        <input class="input100" id="cute-password" type="text" name="password" placeholder="Passphrase" autocomplete ="new-password" onfocus="this.type='password'">
+                        <input class="input100" id="cute-password" type="text" name="password" placeholder="Passphrase" autocomplete ="new-password" onfocus="this.type='password'" readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" >
                         <span class="focus-input100"></span>
                         </span>
                     </div>
