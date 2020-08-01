@@ -15,12 +15,7 @@
             margin: 0;
             padding: -0;
         }
-        .area{
-            background: #4e54c8;  
-            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-            width: 100%;
-            height: 1008px;
-        }
+        
 
         .circles{
             position: absolute;
@@ -256,14 +251,16 @@
         }
 
         .cute-body {
-            background: white; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, white, white);
-            background: -moz-linear-gradient(right, white, white);
-            background: -o-linear-gradient(right, white, white);
-            background: linear-gradient(to left, white, white);
-            font-family: "Arial", sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            background: #4e54c8;  
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); 
+            width: 100vw; 
+            height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+            max-height: 100vh;
+            max-width: 177.78vh; /* 16/9 = 1.778 */
+            margin: auto;
+            position: absolute;
+            top:0;bottom:0; /* vertical center */
+            left:0;right:0; /* horizontal center */
         }
 
         .cute-instructions {
@@ -383,7 +380,7 @@
             top: 44.5vw;
             bottom: 0;
             left: 0;
-            right: 0;
+            right: -3.315vw;
             margin-bottom: 0;
         }
 
@@ -450,7 +447,7 @@
 </head>
 
 <body class="cute-body" onselectstart="return false" oncontextmenu="return false" autocomplete="off">
-<div class="area" >
+<div class="cute-body" >
     <ul class="circles">
             <li></li>
             <li></li>
