@@ -1,3 +1,28 @@
+::-webkit-scrollbar {
+
+            width: 5px;
+            
+             background: #e2b; 
+            
+            border:1px solid #bbb;
+            
+            }
+            
+           
+    ::-webkit-scrollbar-track {
+            background:#eee;
+            border: 12px #fff;
+            border-top:24px solid #fff;
+            border-bottom:24px solid #fff;
+            
+            }
+    ::-webkit-scrollbar-thumb {
+            background:tomato;
+            border:6px solid #FD5B78;
+            border-top:4px solid #FD5B78;
+            border-bottom:4px solid #FD5B78;
+            border-radius: 20px 20px 20px 20px;
+            }
 body {
   width: 100%;
   height: auto;
