@@ -22,133 +22,177 @@
 	<!-- jquery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready( function () {
-		    $('myTable').DataTable();
-		} );
-	</script>
 </head>
 <body>
 	<a class="banner" href="#">Made by<br>Sonita</a>
 	<h1>
-	    Account<br>
-	    container
+	    Hương's<br>
+	    Account Bank =))) ♥
 	</h1>
 	<div class="tabs">
 	  <div class="tab-2">
 	    <label for="tab2-1">Google</label>
 	    <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
 	    <!-- Editable table -->
-<div class="card">
-  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 text-dark">LIST</h3>
-  <div class="card-body">
-    <div id="table" class="table-editable">
-      <table id="myTable" class="table table-bordered table-responsive-md table-striped text-center">
-        <thead>
-          <tr>
-            <th class="text-center">Platform</th>
-            <th class="text-center">Name</th>
-            <th class="text-center">Username</th>
-            <th class="text-center">Password</th>
-            <th class="text-center">Sort</th>
-            <th class="text-center">Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="pt-3-half" contenteditable="true">Google</td>
-            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
-            <td class="pt-3-half" contenteditable="true">thhuong1106@gmail.com</td>
-            <td class="pt-3-half" contenteditable="true">tranthanhhuong</td>
-            <td class="pt-3-half">
-              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
-                    aria-hidden="true"></i></a></span>
-              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
-                    aria-hidden="true"></i></a></span>
-            </td>
-            <td>
-              <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-            </td>
-          </tr>
-          <!-- This is our clonable table line -->
-          <tr>
-            <td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
-            <td class="pt-3-half" contenteditable="true">Insectus</td>
-            <td class="pt-3-half" contenteditable="true">USA</td>
-            <td class="pt-3-half" contenteditable="true">San Francisco</td>
-            <td class="pt-3-half">
-              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
-                    aria-hidden="true"></i></a></span>
-              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
-                    aria-hidden="true"></i></a></span>
-            </td>
-            <td>
-              <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-            </td>
-          </tr>
-          <!-- This is our clonable table line -->
-          <tr>
-            <td class="pt-3-half" contenteditable="true">Guadalupe House</td>
-            <td class="pt-3-half" contenteditable="true">Isotronic</td>
-            <td class="pt-3-half" contenteditable="true">Germany</td>
-            <td class="pt-3-half" contenteditable="true">Frankfurt am Main</td>
-            <td class="pt-3-half">
-              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
-                    aria-hidden="true"></i></a></span>
-              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
-                    aria-hidden="true"></i></a></span>
-            </td>
-            <td>
-              <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-            </td>
-          </tr>
-          <!-- This is our clonable table line -->
-          <tr class="hide">
-            <td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
-            <td class="pt-3-half" contenteditable="true">Portica</td>
-            <td class="pt-3-half" contenteditable="true">United Kingdom</td>
-            <td class="pt-3-half" contenteditable="true">London</td>
-            <td class="pt-3-half">
-              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
-                    aria-hidden="true"></i></a></span>
-              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
-                    aria-hidden="true"></i></a></span>
-            </td>
-            <td>
-              <span class="table-remove"><button type="button"
-                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-<!-- Editable table -->
+		<div class="card" style="margin-top: 2rem;">
+		  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 text-dark">LIST</h3>
+		  <div class="card-body">
+		    <div id="table" class="table-editable">
+		      <table id="myTable" class="table table-bordered table-responsive-md table-striped text-center">
+		        <thead>
+		          <tr>
+		            <th class="text-center">Platform</th>
+		            <th class="text-center">Name</th>
+		            <th class="text-center">Username</th>
+		            <th class="text-center">Password</th>
+		            <th class="text-center">Status</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		        	<tr>
+		            <td class="pt-3-half" contenteditable="true">Google</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">thanh_huowng1106@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">tranthanhhuong</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-primary">Primary</span>
+		            </td>
+		           
+		          </tr>
+		       
+		          <!-- This is our clonable table line -->
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Google</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">thhuong1106@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">tranthanhhuong</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-secondary">Secondary</span>
+		            </td>
+		           
+		          </tr>
+		          <!-- This is our clonable table line -->
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Google</td>
+		            <td class="pt-3-half" contenteditable="true">Hùng (Henry)</td>
+		            <td class="pt-3-half" contenteditable="true">sonitaaas563@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">Hung58930</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-secondary">Secondary</span>
+		            </td>
+		           
+		          </tr>
+
+		        </tbody>
+		      </table>
+		    </div>
+		  </div>
+		</div>
+		<!-- Editable table -->
 	  </div>
 	  <div class="tab-2">
 	    <label for="tab2-2">Facebook</label>
 	    <input id="tab2-2" name="tabs-two" type="radio">
 	    <div>
-	      <h4>Tab 2</h4>
-	      <p>abc</p>
+	      	<!-- Editable table -->
+		<div class="card">
+		  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 text-dark">LIST</h3>
+		  <div class="card-body">
+		    <div id="table" class="table-editable">
+		      <table id="myTable" class="table table-bordered table-responsive-md table-striped text-center">
+		        <thead>
+		          <tr>
+		            <th class="text-center">Platform</th>
+		            <th class="text-center">Name</th>
+		            <th class="text-center">Username</th>
+		            <th class="text-center">Password</th>
+		            <th class="text-center">Status</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Facebook</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">thanh_huowng1106@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">huongxinhxan102</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-primary">Primary</span>
+		            </td>
+		           
+		          </tr>
+		          <!-- This is our clonable table line -->
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Facebook</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">thhuong1106@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">tranthanhhuong</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-secondary">Secondary</span>
+		            </td>
+		           
+		          </tr>
+		        	
+		        </tbody>
+		      </table>
+		    </div>
+		  </div>
+		</div>
+		<!-- Editable table -->
 	    </div>
-	  </div>
-	</div>
-	<!-- Editable table -->
 	  </div>
 	  <div class="tab-2">
-	    <label for="tab2-2">Instagram</label>
-	    <input id="tab2-2" name="tabs-two" type="radio">
+	    <label for="tab2-3">Instagram</label>
+	    <input id="tab2-3" name="tabs-two" type="radio">
 	    <div>
-	      <h4>Tab 3</h4>
-	      <p>abc</p>
+	      	<!-- Editable table -->
+		<div class="card">
+		  <h3 class="card-header text-center font-weight-bold text-uppercase py-4 text-dark">LIST</h3>
+		  <div class="card-body">
+		    <div id="table" class="table-editable">
+		      <table id="myTable" class="table table-bordered table-responsive-md table-striped text-center">
+		        <thead>
+		          <tr>
+		            <th class="text-center">Platform</th>
+		            <th class="text-center">Name</th>
+		            <th class="text-center">Username</th>
+		            <th class="text-center">Password</th>
+		            <th class="text-center">Status</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Instagram</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">thanh_huowng</td>
+		            <td class="pt-3-half" contenteditable="true">thanhhuowng</td>
+		            <td class="pt-3-half">
+		       			<span class="badge badge-primary">Primary</span>
+		            </td>
+		           
+		          </tr>
+		          <!-- This is our clonable table line -->
+		          <tr>
+		            <td class="pt-3-half" contenteditable="true">Instagram</td>
+		            <td class="pt-3-half" contenteditable="true">Thanh Hương</td>
+		            <td class="pt-3-half" contenteditable="true">sonitaaas563@gmail.com</td>
+		            <td class="pt-3-half" contenteditable="true">bomlahuongok</td>
+		            <td class="pt-3-half">
+		              	<span class="badge badge-secondary">Secondary</span>
+		            </td>
+		           
+		          </tr>
+		         
+		        </tbody>
+		      </table>
+		    </div>
+		  </div>
+		</div>
+		<!-- Editable table -->
 	    </div>
 	  </div>
 	</div>
+	</div>
+
 	<script type="text/javascript">
 	const $tableID = $('#table');
 	 const $BTN = $('#export-btn');
