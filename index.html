@@ -3,12 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<!-- MDB icon -->
 	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 	<!-- Google Fonts Roboto -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,10 +20,13 @@
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Main index css -->
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style2.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/tabseditable.css">
 	<!-- jquery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 <body>
 	<div class="tabs">
@@ -187,7 +192,7 @@
 	  </div>
 	</div>
 	</div>
-	<div class="footer">
+	<div class="huong pt-5">
 		<h1>
 		    <span>H</span>
 			<span>u</span>
@@ -197,14 +202,35 @@
 			<span>'</span>
 			<span>s</span>
 			<span> </span>
-			<span> </span>
-			<span>B</span>
-			<span>a</span>
-			<span>n</span>
-			<span>k</span>
-			<span> </span>
 			<span>♥</span>
 		</h1>
 	</div>
+	<section class="cd-section">
+		<div class="cd-modal-action">
+			<a href="#0" class="btn" data-type="modal-trigger">Nothing</a>
+			<span class="cd-modal-bg"></span>
+		</div> <!-- cd-modal-action -->
+
+		<div class="cd-modal">
+			<div class="cd-modal-content">
+				<p>
+					17/08/2017 ♥
+				</p>
+
+				<p>
+					Anh có vài điều muốn tâm sự với em, nhưng mà lúc đó, điều gì đó đã khiến anh phải dừng lại suy nghĩ <span style="color: #FF355E; font-weight: bold; ">mình có vẻ đã lấn hơi sâu vào chuyện của em ấy</span>...
+				</p>
+
+				<p>
+					Thôi, nếu có duyên trong tương lai, nếu chúng ta còn giữ liên lạc hoặc có cơ hội gặp được nhau thì anh sẽ ngồi tâm sự với em. Yên tâm dù em có quên thì anh phải vẫn giữ <span style="color: #FF355E; font-weight: bold;">lời hứa</span> không quên em.
+				</p>
+			</div> <!-- cd-modal-content -->
+		</div> <!-- cd-modal -->
+
+		<a href="#0" class="cd-modal-close">Close</a>
+	</section> <!-- .cd-section -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
