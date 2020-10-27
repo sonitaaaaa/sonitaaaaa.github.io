@@ -89,8 +89,9 @@ select:focus {
       padding-top: 1.4rem;
     }
 .card-header {
+  margin-top: -32px;
   background: #fd264f;
 }
 .card-body {
-  background: ;
+  background: #fff;
 }
