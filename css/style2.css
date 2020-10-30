@@ -81,6 +81,7 @@ Main Components
   background-color: #34383c;
 }
 .cd-modal-action .btn {
+  display: none;
   width: 12.5em;
   border-radius: 5em;
   color: #ffffff;

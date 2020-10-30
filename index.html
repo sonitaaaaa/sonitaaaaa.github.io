@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style2.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/tabseditable.css">
+	<link rel="stylesheet" href="scss/_custom-styles.scss">
 	<!-- jquery -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
@@ -205,9 +206,30 @@
 			<span>♥</span>
 		</h1>
 	</div>
+	<script type="text/javascript">
+		function onSubmit() {
+			if (document.getElementById('password').value == '11/06/2003'){	
+				window.btn.style.display="block"; 
+			}else{ 
+				alert('Access Denied! Try again.');
+		}
+	}
+	document.getElementById('password')
+	  	.addEventListener('keyup', function(event) {
+	    if (event.code === 'Enter') {
+	      	event.preventDefault();
+	      	document.querySelector('div').submit();
+	    }
+	});
+	</script>
+	<div class="row-fluid">
+		<label>Access code</label>
+        <input type="password" name="password" maxlength="10" class="span7" id="password" placeholder="enter code..." required/>
+        <button class="button1 btn-outline-danger btn-rounded waves-effect" id="button1" onclick="onSubmit()">submit </button>
+    </div>
 	<section class="cd-section">
 		<div class="cd-modal-action">
-			<a href="#0" class="btn" data-type="modal-trigger">Nothing...</a>
+			<a href="#0" class="btn" id="btn" data-type="modal-trigger">Nothing...</a>
 			<span class="cd-modal-bg"></span>
 		</div> <!-- cd-modal-action -->
 
@@ -217,11 +239,11 @@
 					17/08/2017 ♥
 				</p>
 
-				<p>
+				<p style="display: none;">
 					Anh có vài điều muốn tâm sự với em, nhưng mà lúc đó, điều gì đó đã khiến anh phải dừng lại suy nghĩ <span style="color: #FF355E; font-weight: bold; ">mình có vẻ đã lấn hơi sâu vào chuyện của em ấy</span>...
 				</p>
 
-				<p>
+				<p style="display: none;">
 					Thôi, nếu có duyên trong tương lai, nếu chúng ta còn giữ liên lạc hoặc có cơ hội gặp được nhau thì anh sẽ ngồi tâm sự với em. Yên tâm dù em có quên thì anh phải vẫn giữ <span style="color: #FF355E; font-weight: bold;">lời hứa</span> không quên em.
 				</p>
 			</div> <!-- cd-modal-content -->

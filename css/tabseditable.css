@@ -171,3 +171,44 @@ h1 span:nth-child(9) { animation-delay: .8s; }
 .card-body {
   background: #fff;
 }
+.row-fluid {
+  position: absolute;
+  top: 51rem;
+  right: 15rem;
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: auto;
+}
+.button1 {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  border-radius: 10%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1%;
+  margin-left: 45%;
+}
+
+.button1:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.button1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.button1:hover:before {
+  left: 100%;
+}
