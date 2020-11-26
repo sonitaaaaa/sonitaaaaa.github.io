@@ -264,7 +264,62 @@
 	</section> <!-- .cd-section -->
 	<img src="img/377707_kingsman-logo-png.jpg" alt="" style="width: 200px; height: 200px; position: absolute; top: 1rem; right: 5rem;">
 	<img src="img/Daco_5896886.png" alt="" style="width: 140px; height: 140px; position: absolute; top: 3rem; right: 18rem;">
-	<embed src="audio/KINGSMAN THE SECRET SERVICE - MAIN THEME.mp3" loop="true" autostart="true" width="2" height="0">
+	<div id="app-cover">
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name" style="margin-top: 1rem; margin-bottom: -8px;"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="img/kingsman.jpg" class="active" id="_1">
+                    <img src="img/kingsman.jpg" id="_2">
+                    <img src="img/kingsman.jpg" id="_3">
+                    <img src="img/kingsman.jpg" id="_4">
+                    <img src="img/kingsman.jpg" id="_5">
+                    <img src="img/kingsman.jpg" id="_6">
+                    <img src="img/kingsman.jpg" id="_7">
+                    <img src="img/kingsman.jpg" id="_8">
+                    <img src="img/kingsman.jpg" id="_9">
+                    <img src="img/kingsman.jpg" id="_10">
+                    <img src="img/kingsman.jpg" id="_11">
+                    <img src="img/kingsman.jpg" id="_12">
+                    <img src="img/kingsman.jpg" id="_13">
+                    <img src="img/kingsman.jpg" id="_14">
+                    <img src="img/kingsman.jpg" id="_15">
+                    <div id="buffer-box">Đang Tải ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <i class="fas fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/audio.js"></script>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
