@@ -172,12 +172,16 @@ h1 span:nth-child(9) { animation-delay: .8s; }
   background: #fff;
 }
 .row-fluid {
+  opacity: 0;
   position: absolute;
   top: 51rem;
   right: 15rem;
   margin-top: 5%;
   margin-left: 1%;
   margin-right: auto;
+}
+.row-fluid:hover {
+  opacity: 1;
 }
 .button1 {
   text-decoration: none;
