@@ -405,7 +405,7 @@ h1 span:nth-child(9) { animation-delay: .8s; }
     margin: -10px auto 0 auto;
     background-color: #d6dee7;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 2px black;
+    box-shadow: inset 0 0 0 2px #fff;
     z-index: 2;
 }
 
