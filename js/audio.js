@@ -66,7 +66,7 @@ $(function()
     'audio/Not in Vain - Henry Jackman & Matthew Margeson - Henry Jackman.mp3',
     'audio/No Time For Emotion - Henry Jackman_ Mat.mp3'], 
     playPreviousTrackButton = $('#play-previous'), 
-    playNextTrackButton = $('#play-next'), 
+    playNextTrackButton = $('#play-next'),
     currIndex = -1;
 
     function playPause()
